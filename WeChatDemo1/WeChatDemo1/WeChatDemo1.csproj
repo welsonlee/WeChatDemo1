@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E151C952-3C8B-4CAB-ABC2-2C6AC76C6C00}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeChatDemo1</RootNamespace>
+    <AssemblyName>WeChatDemo1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="example\example.js" />
+    <Content Include="example\fragment\actionsheet.html" />
+    <Content Include="example\fragment\article.html" />
+    <Content Include="example\fragment\badge.html" />
+    <Content Include="example\fragment\button.html" />
+    <Content Include="example\fragment\dialog.html" />
+    <Content Include="example\fragment\flex.html" />
+    <Content Include="example\fragment\footer.html" />
+    <Content Include="example\fragment\gallery.html" />
+    <Content Include="example\fragment\grid.html" />
+    <Content Include="example\fragment\home.html" />
+    <Content Include="example\fragment\icons.html" />
+    <Content Include="example\fragment\input.html" />
+    <Content Include="example\fragment\layers.html" />
+    <Content Include="example\fragment\list.html" />
+    <Content Include="example\fragment\loadmore.html" />
+    <Content Include="example\fragment\msg.html" />
+    <Content Include="example\fragment\msg_success.html" />
+    <Content Include="example\fragment\msg_warn.html" />
+    <Content Include="example\fragment\navbar.html" />
+    <Content Include="example\fragment\panel.html" />
+    <Content Include="example\fragment\picker.html" />
+    <Content Include="example\fragment\preview.html" />
+    <Content Include="example\fragment\progress.html" />
+    <Content Include="example\fragment\searchbar.html" />
+    <Content Include="example\fragment\slider.html" />
+    <Content Include="example\fragment\tabbar.html" />
+    <Content Include="example\fragment\toast.html" />
+    <Content Include="example\fragment\uploader.html" />
+    <Content Include="example\images\icon_footer.png" />
+    <Content Include="example\images\icon_footer_link.png" />
+    <Content Include="example\images\icon_intro.png" />
+    <Content Include="example\images\icon_nav_feedback.png" />
+    <Content Include="example\images\icon_nav_form.png" />
+    <Content Include="example\images\icon_nav_layout.png" />
+    <Content Include="example\images\icon_nav_nav.png" />
+    <Content Include="example\images\icon_nav_search.png" />
+    <Content Include="example\images\icon_nav_special.png" />
+    <Content Include="example\images\icon_nav_z-index.png" />
+    <Content Include="example\images\icon_tabbar.png" />
+    <Content Include="example\images\layers\content.png" />
+    <Content Include="example\images\layers\navigation.png" />
+    <Content Include="example\images\layers\popout.png" />
+    <Content Include="example\images\layers\transparent.gif" />
+    <Content Include="example\images\logo.png" />
+    <Content Include="example\images\pic_160.png" />
+    <Content Include="example\images\pic_article.png" />
+    <Content Include="example\images\vcode.jpg" />
+    <Content Include="example\index.html" />
+    <Content Include="example\snapshot\button.png" />
+    <Content Include="example\snapshot\cell.png" />
+    <Content Include="example\snapshot\dialog1.png" />
+    <Content Include="example\snapshot\dialog2.png" />
+    <Content Include="example\snapshot\grid.png" />
+    <Content Include="example\snapshot\icons.png" />
+    <Content Include="example\snapshot\progress.png" />
+    <Content Include="example\snapshot\qrcode.png" />
+    <Content Include="example\snapshot\result.png" />
+    <Content Include="example\snapshot\text.png" />
+    <Content Include="example\snapshot\toast1.png" />
+    <Content Include="example\snapshot\toast2.png" />
+    <Content Include="example\zepto.min.js" />
+    <Content Include="Index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="example\example.less" />
+    <Content Include="style\base\fn.less" />
+    <Content Include="style\base\mixin\mobile.less" />
+    <Content Include="style\base\mixin\setArrow.less" />
+    <Content Include="style\base\mixin\setOnepx.less" />
+    <Content Include="style\base\mixin\text.less" />
+    <Content Include="style\base\reset.less" />
+    <Content Include="style\base\variable\color.less" />
+    <Content Include="style\base\variable\global.less" />
+    <Content Include="style\base\variable\weui-button.less" />
+    <Content Include="style\base\variable\weui-cell.less" />
+    <Content Include="style\base\variable\weui-dialog.less" />
+    <Content Include="style\base\variable\weui-grid.less" />
+    <Content Include="style\base\variable\weui-msg.less" />
+    <Content Include="style\base\variable\weui-progress.less" />
+    <Content Include="style\icon\weui-font.less" />
+    <Content Include="style\icon\weui-icon_font.less" />
+    <Content Include="style\weui.less" />
+    <Content Include="style\widget\weui-agree\weui-agree.less" />
+    <Content Include="style\widget\weui-animate\weui-animate.less" />
+    <Content Include="style\widget\weui-button\weui-btn_default.less" />
+    <Content Include="style\widget\weui-button\weui-btn_disabled.less" />
+    <Content Include="style\widget\weui-button\weui-btn_global.less" />
+    <Content Include="style\widget\weui-button\weui-btn_loading.less" />
+    <Content Include="style\widget\weui-button\weui-btn_plain.less" />
+    <Content Include="style\widget\weui-button\weui-btn_primary.less" />
+    <Content Include="style\widget\weui-button\weui-btn_warn.less" />
+    <Content Include="style\widget\weui-button\weui-button.less" />
+    <Content Include="style\widget\weui-cell\weui-access.less" />
+    <Content Include="style\widget\weui-cell\weui-cell_global.less" />
+    <Content Include="style\widget\weui-cell\weui-cell_swiped.less" />
+    <Content Include="style\widget\weui-cell\weui-check.less" />
+    <Content Include="style\widget\weui-cell\weui-check\weui-checkbox.less" />
+    <Content Include="style\widget\weui-cell\weui-check\weui-check_common.less" />
+    <Content Include="style\widget\weui-cell\weui-check\weui-radio.less" />
+    <Content Include="style\widget\weui-cell\weui-form.less" />
+    <Content Include="style\widget\weui-cell\weui-form\weui-form-preview.less" />
+    <Content Include="style\widget\weui-cell\weui-form\weui-form_common.less" />
+    <Content Include="style\widget\weui-cell\weui-form\weui-select.less" />
+    <Content Include="style\widget\weui-cell\weui-form\weui-vcode.less" />
+    <Content Include="style\widget\weui-cell\weui-gallery.less" />
+    <Content Include="style\widget\weui-cell\weui-switch.less" />
+    <Content Include="style\widget\weui-cell\weui-uploader.less" />
+    <Content Include="style\widget\weui-flex\weui-flex.less" />
+    <Content Include="style\widget\weui-footer\weui-footer.less" />
+    <Content Include="style\widget\weui-grid\weui-grid.less" />
+    <Content Include="style\widget\weui-loading\weui-loading.less" />
+    <Content Include="style\widget\weui-media-box\weui-media-box.less" />
+    <Content Include="style\widget\weui-page\weui-article.less" />
+    <Content Include="style\widget\weui-page\weui-msg.less" />
+    <Content Include="style\widget\weui-panel\weui-panel.less" />
+    <Content Include="style\widget\weui-picker\weui-picker.less" />
+    <Content Include="style\widget\weui-progress\weui-progress.less" />
+    <Content Include="style\widget\weui-searchbar\weui-searchbar.less" />
+    <Content Include="style\widget\weui-slider\weui-slider.less" />
+    <Content Include="style\widget\weui-tab\weui-navbar.less" />
+    <Content Include="style\widget\weui-tab\weui-tab.less" />
+    <Content Include="style\widget\weui-tab\weui-tabbar.less" />
+    <Content Include="style\widget\weui-tips\weui-actionsheet.less" />
+    <Content Include="style\widget\weui-tips\weui-badge.less" />
+    <Content Include="style\widget\weui-tips\weui-dialog.less" />
+    <Content Include="style\widget\weui-tips\weui-loadmore.less" />
+    <Content Include="style\widget\weui-tips\weui-mask.less" />
+    <Content Include="style\widget\weui-tips\weui-toast.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8343</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
